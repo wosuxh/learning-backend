@@ -1,5 +1,5 @@
 const fs = require("fs");
-
+// this is for file system
 const filePath = "./todo/tasks.json";
 
 const loadTasks = () => {
