@@ -4,7 +4,7 @@ const filePath = "./todo/tasks.json";
 
 const loadTasks = () => {
   try {
-    const dataBuffer = fs.readFileSync(filePath);
+    const dataBuffer = fs.readFileSync(filePath, "utf-8"); // after writing utf-8 there is no need for changing it to string because it is already converted
     const dataJSON = dataBuffer.toString();
     return JSON.parse(dataJSON);
   } catch (error) {
